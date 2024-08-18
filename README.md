@@ -15,9 +15,10 @@ ChatApp is a simple chat application that enables communication between a server
 
 Clone the project from GitHub (replace the URL with the correct one for your project):
 
-\*\*\*bash
+```bash
 git clone https://github.com/username/ChatApp.git
 cd ChatApp
+```
 
 ---
 
@@ -25,9 +26,10 @@ cd ChatApp
 
 Ensure you have Boost and CMake installed. You can install Boost using your distribution’s package manager. For example, on Ubuntu:
 
-\*\*\*bash
+```bash
 sudo apt update
 sudo apt install libboost-all-dev cmake g++ make
+```
 
 ---
 
@@ -35,11 +37,12 @@ sudo apt install libboost-all-dev cmake g++ make
 
 Build the project using CMake and make:
 
-\*\*\*bash
+```bash
 mkdir build
 cd build
 cmake ..
 make
+```
 
 ---
 
@@ -49,8 +52,9 @@ make
 
 To start the server, use the command:
 
-\*\*\*bash
+```bash
 ./ChatSystem server <port>
+```
 
 ---
 
@@ -60,8 +64,9 @@ Replace `<port>` with the port you want the server to listen on (e.g., 25655).
 
 To start the client and connect to the server, use the command:
 
-\*\*\*bash
+```bash
 ./ChatSystem client <host> <port>
+```
 
 ---
 
@@ -71,15 +76,17 @@ Replace `<host>` with the IP address or domain name of the server and `<port>` w
 
 ### Starting a Server on Port 25655
 
-\*\*\*bash
+```bash
 ./ChatSystem server 25655
+```
 
 ---
 
 ### Starting a Client Connecting to `trwix.go.ro` on Port 25655
 
-\*\*\*bash
+```bash
 ./ChatSystem client trwix.go.ro 25655
+```
 
 ---
 
