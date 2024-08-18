@@ -5,6 +5,7 @@
 /CMakeFiles/
 /Makefile
 /CMakeCache.txt
+.cache/
 /*.suo
 /*.user
 /*.userosscache
