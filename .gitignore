@@ -1,0 +1,76 @@
+# Build artifacts
+/build/
+/bin/
+/obj/
+/CMakeFiles/
+/Makefile
+/CMakeCache.txt
+/*.suo
+/*.user
+/*.userosscache
+/*.sln
+/*.vcxproj
+/*.vcxproj.filters
+/*.ncb
+*.d
+*.o
+*.a
+*.lo
+*.la
+*.loT
+*.gch
+*.gcov
+*.gcda
+*.gcno
+*.cprof
+*.pdb
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Compiled object files
+*.o
+*.obj
+*.gch
+*.pch
+
+# Compiled static libraries
+*.lib
+*.a
+
+# Compiled dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Backup and editor files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+
+# IDE specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# C++ dependency files
+*.d
+*.dmp
+*.i
+*.ii
+
+# Other
+*.log
+*.tgz
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
