@@ -35,7 +35,7 @@ void ChatServer::startRead(std::shared_ptr<tcp::socket> socket)
                                     std::string message(buffer->begin(), buffer->begin() + length);
                                     std::string client_ip = socket->remote_endpoint().address().to_string();
                                     std::cout << "[" << client_ip << "] [CHAT]: " << message << std::endl;
-                                    broadcastMessage(message); // Send message to all clients
+                                    broadcastMessage(message);
                                     startRead(socket);
                                 }
                                 else
@@ -56,7 +56,7 @@ void ChatServer::broadcastMessage(const std::string &message)
     for (auto &socket : connections_)
     {
         boost::asio::async_write(*socket, boost::asio::buffer(message),
-                                 [](boost::system::error_code ec, std::size_t /*length*/)
+                                 [](boost::system::error_code ec, std::size_t)
                                  {
                                      if (ec)
                                      {

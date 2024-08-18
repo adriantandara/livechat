@@ -10,7 +10,6 @@ ChatClient::ChatClient(boost::asio::io_context &io_context, const std::string &h
     boost::asio::connect(socket_, endpoints);
     std::cout << "[INFO] Connected to server at " << host << " on port " << port << std::endl;
     startRead();
-    // Launch a thread to handle writing messages
     std::thread([this]()
                 { writeMessages(); })
         .detach();
